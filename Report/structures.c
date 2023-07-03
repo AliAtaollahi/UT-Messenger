@@ -1,0 +1,20 @@
+typedef struct INFORMATION_OF_USERS USER;
+typedef struct INFORMATION_OF_MESSAGES MESSAGE;
+struct INFORMATION_OF_USERS
+{
+	char* USERNAME;
+	char* PHONE_NUMBER;
+	char* PASSWORD;
+	int NUM_OF_USER;
+	USER* next;
+};
+struct INFORMATION_OF_MESSAGES
+{
+	int NUM_OF_MESSAGE;
+	int CHECK_BE_READ;
+	char* TIME;
+	char* TEXT;
+	USER* SENDER;
+	USER* RECEIVER;
+	MESSAGE* next;
+};
